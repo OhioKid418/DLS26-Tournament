@@ -411,28 +411,6 @@ function showTrophyRoom(){
     container.innerHTML = html;
 
 }
-function showVoting(){
-
-    showPanel();
-
-    const container = document.getElementById("dynamicContent");
-
-    container.innerHTML = `
-        <h2>🗳️ Community Voting</h2>
-        <p>Vote for your favorite DLS players and events.</p>
-
-        <div class="strawpoll-embed">
-            <iframe
-                title="StrawPoll Embed"
-                src="https://strawpoll.com/embed/mpnb1WWAEy5"
-                frameborder="0"
-                allowfullscreen
-                allowtransparency>
-                Loading...
-            </iframe>
-        </div>
-    `;
-}
 // -------------------------
 // Default Page
 // -------------------------
