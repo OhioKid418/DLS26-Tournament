@@ -417,7 +417,6 @@ function showTrophyRoom(){
 // -------------------------
 
 showBracket();
-
 function showVoting() {
     document.getElementById("bracketSection").style.display = "none";
     document.getElementById("contentSection").style.display = "block";
@@ -425,18 +424,33 @@ function showVoting() {
     document.getElementById("dynamicContent").innerHTML = `
         <h2>🗳️ Community Voting</h2>
 
-        <div class="strawpoll-embed" style="height:672px; max-width:640px; width:100%; margin:auto; display:flex; flex-direction:column;">
-            <iframe 
+        <div class="strawpoll-embed" 
+             style="height:672px; max-width:640px; width:100%; margin:auto; display:flex; flex-direction:column;">
+            
+            <iframe
                 title="StrawPoll Embed"
                 src="https://strawpoll.com/embed/mpnb1WWAEy5"
-                style="width:100%; flex-grow:1;"
+                style="width:100%; height:100%; border:0;"
                 frameborder="0"
                 allowfullscreen
                 allowtransparency>
                 Loading...
             </iframe>
 
-            <script async src="https://cdn.strawpoll.com/dist/widgets.js"></script>
         </div>
     `;
+
+    loadStrawPollScript();
+}
+
+function loadStrawPollScript() {
+    if (document.getElementById("strawpoll-script")) return;
+
+    const script = document.createElement("script");
+    script.id = "strawpoll-script";
+    script.async = true;
+    script.src = "https://cdn.strawpoll.com/dist/widgets.js";
+    script.charset = "utf-8";
+
+    document.body.appendChild(script);
 }
