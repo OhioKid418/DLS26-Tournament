@@ -422,7 +422,6 @@ function showVoting(){
         <p>Vote for your favorite DLS players and events.</p>
 
         <div class="strawpoll-embed">
-
             <iframe
                 title="StrawPoll Embed"
                 src="https://strawpoll.com/embed/mpnb1WWAEy5"
@@ -431,10 +430,8 @@ function showVoting(){
                 allowtransparency>
                 Loading...
             </iframe>
-
         </div>
     `;
-
 }
 // -------------------------
 // Default Page
