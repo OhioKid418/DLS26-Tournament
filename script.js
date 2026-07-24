@@ -158,6 +158,13 @@ const tournaments = [
     champion: "Daniel",
     runnerUp: "Dylan",
     third: "Samu"
+},
+	
+{
+    name: "DLS Cup 3",
+    champion: "TBD",
+    runnerUp: "TBD",
+    third: "TBD"
 }
 
 ];
