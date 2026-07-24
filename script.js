@@ -411,12 +411,6 @@ function showTrophyRoom(){
     container.innerHTML = html;
 
 }
-
-// -------------------------
-// Default Page
-// -------------------------
-
-showBracket();
 function showVoting() {
     document.getElementById("bracketSection").style.display = "none";
     document.getElementById("contentSection").style.display = "block";
@@ -454,3 +448,9 @@ function loadStrawPollScript() {
 
     document.body.appendChild(script);
 }
+
+// -------------------------
+// Default Page
+// -------------------------
+
+showBracket();
