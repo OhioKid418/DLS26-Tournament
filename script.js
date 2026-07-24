@@ -411,20 +411,21 @@ function showTrophyRoom(){
     container.innerHTML = html;
 
 }
-function showVoting() {
-    document.getElementById("bracketSection").style.display = "none";
-    document.getElementById("contentSection").style.display = "block";
+function showVoting(){
 
-    document.getElementById("dynamicContent").innerHTML = `
+    showPanel();
+
+    const container = document.getElementById("dynamicContent");
+
+    container.innerHTML = `
         <h2>🗳️ Community Voting</h2>
+        <p>Vote for your favorite DLS players and events.</p>
 
-        <div class="strawpoll-embed" 
-             style="height:672px; max-width:640px; width:100%; margin:auto; display:flex; flex-direction:column;">
-            
+        <div class="strawpoll-embed">
+
             <iframe
                 title="StrawPoll Embed"
                 src="https://strawpoll.com/embed/mpnb1WWAEy5"
-                style="width:100%; height:100%; border:0;"
                 frameborder="0"
                 allowfullscreen
                 allowtransparency>
@@ -433,22 +434,6 @@ function showVoting() {
 
         </div>
     `;
-
-    loadStrawPollScript();
-}
-
-function loadStrawPollScript() {
-    if (document.getElementById("strawpoll-script")) return;
-
-    const script = document.createElement("script");
-    script.id = "strawpoll-script";
-    script.async = true;
-    script.src = "https://cdn.strawpoll.com/dist/widgets.js";
-    script.charset = "utf-8";
-
-    document.body.appendChild(script);
-}
-
 // -------------------------
 // Default Page
 // -------------------------
