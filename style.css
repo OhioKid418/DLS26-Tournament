@@ -170,24 +170,6 @@ table tr:nth-child(even) {
     font-weight: bold;
 }
 
-
-/* StrawPoll */
-
-.strawpoll-embed {
-    height: 672px;
-    max-width: 640px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-}
-
-.strawpoll-embed iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
 /* Trophy room */
 
 .trophy {
