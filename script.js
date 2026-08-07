@@ -20,7 +20,7 @@ const players = [
     thirdPlace: 0,
 
     medals: 5,
-	cups: 3,
+    cups: 3,
 
     goals: 15,
     conceded: 4,
@@ -46,7 +46,7 @@ const players = [
     thirdPlace: 1,
 
     medals: 2,
-	cups: 0,
+    cups: 0,
 
     goals: 8,
     conceded: 6,
@@ -57,7 +57,7 @@ const players = [
     wins: 2,
     losses: 4,
 
-    bestFinish: "Secon Place",
+    bestFinish: "Second Place",
     worstFinish: "Quarterfinal"
 },
 
@@ -72,7 +72,7 @@ const players = [
     thirdPlace: 2,
 
     medals: 2,
-	cups: 0,
+    cups: 0,
 
     goals: 7,
     conceded: 5,
@@ -84,7 +84,7 @@ const players = [
     losses: 3,
 
     bestFinish: "Third Place",
-    worstFinish: "Quarter Final"
+    worstFinish: "Quarterfinal"
 },
 
 {
@@ -98,7 +98,7 @@ const players = [
     thirdPlace: 1,
 
     medals: 1,
-	cups: 0,
+    cups: 0,
 
     goals: 4,
     conceded: 10,
@@ -109,7 +109,7 @@ const players = [
     wins: 0,
     losses: 2,
 
-    bestFinish: "Thirdplace",
+    bestFinish: "Third Place",
     worstFinish: "Semifinal"
 },
 
@@ -124,7 +124,7 @@ const players = [
     thirdPlace: 0,
 
     medals: 1,
-	cups: 0,
+    cups: 0,
 
     goals: 4,
     conceded: 12,
@@ -150,7 +150,7 @@ const players = [
     thirdPlace: 0,
 
     medals: 1,
-	cups: 0,
+    cups: 0,
 
     goals: 4,
     conceded: 6,
