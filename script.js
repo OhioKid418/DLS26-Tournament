@@ -137,11 +137,10 @@ const players = [
 
     bestFinish: "Final",
     worstFinish: "Semifinal"
-}
-];
+},
 
 {
-    name: "75",
+    name: "Mati",
     rating: 78,
     stars: "⭐⭐⭐☆☆",
 
