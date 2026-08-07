@@ -2,93 +2,163 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>DLS26 Tournament Hub</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
-    <h1>DLS26 Tournament Hub</h1>
-    <p>Select a tournament or view player records.</p>
+<header class="hero">
+
+    <h1>🏆 DLS26 Tournament Hub</h1>
+
+    <p>Official Statistics • Rankings • Tournament History</p>
+
 </header>
 
+<nav class="button-container">
 
-<main>
+    <button class="active"
+        onclick="loadBracket('https://brackethq.com/b/knmkd/embed/?name=1'); setActive(this)">
+        🏆 DLS Cup 1
+    </button>
 
-    <div class="button-container">
+    <button
+        onclick="loadBracket('https://brackethq.com/b/rchkd/embed/?name=1'); setActive(this)">
+        🏆 DLS Cup 2
+    </button>
 
-        <button type="button" class="active"
-            onclick="loadBracket('https://brackethq.com/b/knmkd/embed/?name=1'); setActive(this)">
-            🏆 DLS Cup 1 🏆
-        </button>
+    <button
+        onclick="loadBracket('https://brackethq.com/b/l9tkd/embed/?name=1'); setActive(this)">
+        🏆 DLS Cup 3
+    </button>
 
+    <button
+        onclick="showStats(); setActive(this)">
+        📊 Player Stats
+    </button>
 
-        <button type="button"
-            onclick="loadBracket('https://brackethq.com/b/rchkd/embed/?name=1'); setActive(this)">
-            🏆 DLS Cup 2 🏆
-        </button>
+    <button
+        onclick="showPowerRankings(); setActive(this)">
+        ⭐ Rankings
+    </button>
 
+    <button
+        onclick="showTrophyRoom(); setActive(this)">
+        🏆 Trophy Room
+    </button>
 
-        <button type="button"
-            onclick="loadBracket('https://brackethq.com/b/l9tkd/embed/?name=1'); setActive(this)">
-            🏆 DLS Cup 3 🏆
-        </button>
+    <button
+        onclick="showTopScorers(); setActive(this)">
+        ⚽ Top Scorers
+    </button>
 
+    <button
+        onclick="showBestDefense(); setActive(this)">
+        🧱 Best Defense
+    </button>
 
-        <button type="button"
-            onclick="showStats(); setActive(this)">
-            📊 Player Stats
-        </button>
+    <button
+        onclick="showWinRates(); setActive(this)">
+        📈 Win Rates
+    </button>
 
+    <button
+        onclick="showHallOfFame(); setActive(this)">
+        👑 Hall of Fame
+    </button>
 
-        <button type="button"
-            onclick="showPowerRankings(); setActive(this)">
-            ⭐ Power Rankings
-        </button>
+</nav>
 
+<section class="dashboard">
 
-        <button type="button"
-            onclick="showTrophyRoom(); setActive(this)">
-            🏆 Trophy Room
-        </button>
+    <div class="dashboard-card">
+
+        <h2>🏆 Champion</h2>
+
+        <span id="championCard">Daniel</span>
 
     </div>
 
+    <div class="dashboard-card">
 
-    <section id="bracketSection">
+        <h2>🏟️ Tournaments</h2>
 
-        <div class="bracket">
+        <span id="tournamentCard">3</span>
 
-            <iframe
-                id="bracketFrame"
-                src="https://brackethq.com/b/knmkd/embed/"
-                loading="lazy"
-                allowfullscreen>
-            </iframe>
+    </div>
 
-        </div>
+    <div class="dashboard-card">
 
-    </section>
+        <h2>👥 Players</h2>
 
+        <span id="playerCard">6</span>
 
-    <section id="contentSection" style="display:none;">
+    </div>
 
-        <div class="content-card" id="dynamicContent"></div>
+    <div class="dashboard-card">
 
-    </section>
+        <h2>⚽ Goals</h2>
 
+        <span id="goalCard">42</span>
 
-</main>
+    </div>
 
+</section>
+
+<section class="search-area">
+
+    <input
+        type="text"
+        id="playerSearch"
+        placeholder="Search player..."
+        onkeyup="searchPlayers()">
+
+</section>
+
+<section id="bracketSection">
+
+    <div class="bracket">
+
+        <iframe
+
+            id="bracketFrame"
+
+            src="https://brackethq.com/b/knmkd/embed/?name=1"
+
+            loading="lazy"
+
+            allowfullscreen>
+
+        </iframe>
+
+    </div>
+
+</section>
+
+<section
+    id="contentSection"
+    style="display:none;">
+
+    <div
+        id="dynamicContent"
+        class="content-card">
+
+    </div>
+
+</section>
 
 <footer>
-    <p>Powered by Bracket HQ and my will</p>
-</footer>
 
+    <p>DLS26 Tournament Hub</p>
+
+</footer>
 
 <script src="script.js"></script>
 
