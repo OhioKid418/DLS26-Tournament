@@ -14,21 +14,21 @@ const players = [
     rating: 99,
     stars: "⭐⭐⭐⭐⭐",
 
-    championships: 2,
-    firstPlace: 2,
+    championships: 3,
+    firstPlace: 3,
     secondPlace: 0,
     thirdPlace: 0,
 
-    medals: 4,
-	cups: 2,
+    medals: 5,
+	cups: 3,
 
-    goals: 6,
-    conceded: 2,
+    goals: 15,
+    conceded: 4,
 
-    tournaments: 2,
+    tournaments: 3,
 
-    gamesPlayed: 4,
-    wins: 4,
+    gamesPlayed: 7,
+    wins: 7,
     losses: 0,
 
     bestFinish: "Champion",
@@ -43,79 +43,106 @@ const players = [
     championships: 0,
     firstPlace: 0,
     secondPlace: 1,
-    thirdPlace: 0,
+    thirdPlace: 1,
 
     medals: 2,
 	cups: 0,
 
     goals: 8,
-    conceded: 5,
+    conceded: 6,
 
-    tournaments: 2,
+    tournaments: 3,
 
-    gamesPlayed: 5,
+    gamesPlayed: 6,
     wins: 2,
-    losses: 3,
+    losses: 4,
 
     bestFinish: "Secon Place",
-    worstFinish: "Semifinal"
+    worstFinish: "Quarterfinal"
 },
 
 {
     name: "Samu",
-    rating: 83,
-    stars: "⭐⭐⭐☆☆",
-
-    championships: 0,
-    firstPlace: 0,
-    secondPlace: 0,
-    thirdPlace: 1,
-
-    medals: 1,
-	cups: 0,
-
-    goals: 2,
-    conceded: 2,
-
-    tournaments: 2,
-
-    gamesPlayed: 3,
-    wins: 1,
-    losses: 2,
-
-    bestFinish: "Semifinal",
-    worstFinish: "Quarter Final"
-},
-
-{
-    name: "Tizi",
     rating: 82,
     stars: "⭐⭐⭐☆☆",
 
     championships: 0,
     firstPlace: 0,
     secondPlace: 0,
+    thirdPlace: 2,
+
+    medals: 2,
+	cups: 0,
+
+    goals: 7,
+    conceded: 5,
+
+    tournaments: 3,
+
+    gamesPlayed: 5,
+    wins: 2,
+    losses: 3,
+
+    bestFinish: "Third Place",
+    worstFinish: "Quarter Final"
+},
+
+{
+    name: "Tizi",
+    rating: 60,
+    stars: "⭐⭐☆☆☆",
+
+    championships: 0,
+    firstPlace: 0,
+    secondPlace: 0,
     thirdPlace: 1,
 
     medals: 1,
 	cups: 0,
 
-    goals: 2,
-    conceded: 5,
+    goals: 4,
+    conceded: 10,
 
-    tournaments: 1,
+    tournaments: 2,
 
-    gamesPlayed: 1,
+    gamesPlayed: 2,
     wins: 0,
-    losses: 1,
+    losses: 2,
 
-    bestFinish: "Semifinal",
+    bestFinish: "Thirdplace",
     worstFinish: "Semifinal"
 },
 
 {
     name: "Dylan",
-    rating: 80,
+    rating: 78,
+    stars: "⭐⭐☆☆☆",
+
+    championships: 0,
+    firstPlace: 0,
+    secondPlace: 1,
+    thirdPlace: 0,
+
+    medals: 1,
+	cups: 0,
+
+    goals: 4,
+    conceded: 12,
+
+    tournaments: 3,
+
+    gamesPlayed: 6,
+    wins: 1,
+    losses: 5,
+
+    bestFinish: "Final",
+    worstFinish: "Semifinal"
+}
+];
+
+{
+    name: "75",
+    rating: 78,
     stars: "⭐⭐⭐☆☆",
 
     championships: 0,
@@ -126,17 +153,17 @@ const players = [
     medals: 1,
 	cups: 0,
 
-    goals: 3,
-    conceded: 7,
+    goals: 4,
+    conceded: 6,
 
-    tournaments: 2,
+    tournaments: 3,
 
-    gamesPlayed: 4,
-    wins: 1,
-    losses: 2,
+    gamesPlayed: 6,
+    wins: 2,
+    losses: 1,
 
     bestFinish: "Final",
-    worstFinish: "Semifinal"
+    worstFinish: "Final"
 }
 ];
 
@@ -162,9 +189,9 @@ const tournaments = [
 	
 {
     name: "DLS Cup 3",
-    champion: "TBD",
-    runnerUp: "TBD",
-    third: "TBD"
+    champion: "Daniel",
+    runnerUp: "Mati",
+    third: "Samu"
 }
 
 ];
